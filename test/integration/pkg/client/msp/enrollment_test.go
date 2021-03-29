@@ -12,11 +12,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/msp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/context"
-	mspctx "github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/fabric-sdk-go/test/integration"
+	"github.com/birdycloud/fabric-sdk-go/pkg/client/msp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/context"
+	mspctx "github.com/birdycloud/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fabsdk"
+	"github.com/birdycloud/fabric-sdk-go/test/integration"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

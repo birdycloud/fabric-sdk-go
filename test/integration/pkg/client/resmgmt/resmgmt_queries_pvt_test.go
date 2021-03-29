@@ -11,14 +11,14 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/birdycloud/fabric-sdk-go/pkg/client/resmgmt"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/errors/retry"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/errors/status"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fabsdk"
+	"github.com/birdycloud/fabric-sdk-go/test/integration"
+	"github.com/birdycloud/fabric-sdk-go/test/metadata"
+	"github.com/birdycloud/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric-sdk-go/pkg/client/resmgmt"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/retry"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/errors/status"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
-	"github.com/hyperledger/fabric-sdk-go/test/integration"
-	"github.com/hyperledger/fabric-sdk-go/test/metadata"
-	"github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/common/policydsl"
 	"github.com/stretchr/testify/require"
 )
 

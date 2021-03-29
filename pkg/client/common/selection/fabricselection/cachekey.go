@@ -9,7 +9,7 @@ package fabricselection
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/fab"
 )
 
 type cacheKey struct {

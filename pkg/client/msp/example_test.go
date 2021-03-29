@@ -8,11 +8,11 @@ package msp
 import (
 	"fmt"
 
+	fabricCaUtil "github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/logging"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/context"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/msp"
 	"github.com/cloudflare/cfssl/log"
-	fabricCaUtil "github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/logging"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/context"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
 )
 
 func Example() {

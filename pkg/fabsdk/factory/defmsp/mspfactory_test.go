@@ -12,16 +12,16 @@ import (
 
 	"reflect"
 
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/msp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/test/mockmsp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/core/config"
+	cryptosuiteImpl "github.com/birdycloud/fabric-sdk-go/pkg/core/cryptosuite"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fab"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fabsdk/factory/defcore"
+	mspimpl "github.com/birdycloud/fabric-sdk-go/pkg/msp"
+	"github.com/birdycloud/fabric-sdk-go/test/metadata"
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/msp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/test/mockmsp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/config"
-	cryptosuiteImpl "github.com/hyperledger/fabric-sdk-go/pkg/core/cryptosuite"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk/factory/defcore"
-	mspimpl "github.com/hyperledger/fabric-sdk-go/pkg/msp"
-	"github.com/hyperledger/fabric-sdk-go/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

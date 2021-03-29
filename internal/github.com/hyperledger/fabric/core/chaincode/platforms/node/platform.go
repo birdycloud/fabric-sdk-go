@@ -21,9 +21,9 @@ import (
 	"path/filepath"
 	"regexp"
 
+	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
+	flogging "github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
-	flogging "github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 )
 
 var logger = flogging.MustGetLogger("chaincode.platform.node")

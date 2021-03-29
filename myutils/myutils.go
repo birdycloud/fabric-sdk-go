@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
 	"github.com/tjfoc/gmsm/sm2"
 )
 

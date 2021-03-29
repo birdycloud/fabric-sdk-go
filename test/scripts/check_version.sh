@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PROJECT_NAME="hyperledger/fabric-sdk-go"
+PROJECT_NAME="birdycloud/fabric-sdk-go"
 MAX_RELEASE_VER_FATAL=0
 
 echo "Checking Go version"

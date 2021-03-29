@@ -13,10 +13,10 @@ import (
 
 	"strings"
 
+	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/core"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/test/mockcore"
 	"github.com/golang/mock/gomock"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/core"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/test/mockcore"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/core/config"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fabsdk"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/birdycloud/fabric-sdk-go/pkg/core/config"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fabsdk"
 )
 
 func Example() {

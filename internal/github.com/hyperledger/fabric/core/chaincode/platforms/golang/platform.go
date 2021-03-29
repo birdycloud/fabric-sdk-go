@@ -26,9 +26,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
+	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/ccmetadata"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
-	"github.com/hyperledger/fabric-sdk-go/internal/github.com/hyperledger/fabric/sdkinternal/ccmetadata"
 	"github.com/pkg/errors"
 )
 

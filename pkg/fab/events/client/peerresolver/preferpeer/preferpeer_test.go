@@ -9,11 +9,11 @@ package preferpeer
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	clientmocks "github.com/hyperledger/fabric-sdk-go/pkg/fab/events/client/mocks"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/hyperledger/fabric-sdk-go/pkg/fab/mocks"
-	"github.com/hyperledger/fabric-sdk-go/pkg/msp/test/mockmsp"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/fab"
+	clientmocks "github.com/birdycloud/fabric-sdk-go/pkg/fab/events/client/mocks"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/birdycloud/fabric-sdk-go/pkg/fab/mocks"
+	"github.com/birdycloud/fabric-sdk-go/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

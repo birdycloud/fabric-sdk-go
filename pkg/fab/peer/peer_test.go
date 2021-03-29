@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/fab"
+	"github.com/birdycloud/fabric-sdk-go/pkg/common/providers/test/mockfab"
 	"github.com/golang/mock/gomock"
 	"github.com/hyperledger/fabric-protos-go/gossip"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/fab"
-	"github.com/hyperledger/fabric-sdk-go/pkg/common/providers/test/mockfab"
 	"github.com/stretchr/testify/require"
 )
 
