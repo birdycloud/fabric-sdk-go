@@ -1,12 +1,9 @@
 package myutils
 
 import (
-	"encoding/pem"
-	"fmt"
 	"time"
 
 	"github.com/birdycloud/fabric-sdk-go/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/tjfoc/gmsm/sm2"
 )
 
 //TransactionInfo 解析后的交易信息
@@ -47,17 +44,17 @@ func UnmarshalTransaction(payloadRaw []byte) (*TransactionInfo, error) {
 		return nil, err
 	}
 	//下面为解析证书
-	block, _ := pem.Decode(identity.GetIdBytes())
-	if block == nil {
-		return nil, fmt.Errorf("identity could not be decoded from credential")
-	}
-	cert, err := sm2.ParseCertificate(block.Bytes)
-	if err != nil {
-		return nil, fmt.Errorf("failed to parse certificate: %s", err)
-	}
-	//解析用户名和OU分组
-	uname := cert.Subject.CommonName
-	outypes := cert.Subject.OrganizationalUnit
+	// block, _ := pem.Decode(identity.GetIdBytes())
+	// if block == nil {
+	// 	return nil, fmt.Errorf("identity could not be decoded from credential")
+	// }
+	// cert, err := sm2.ParseCertificate(block.Bytes)
+	// if err != nil {
+	// 	return nil, fmt.Errorf("failed to parse certificate: %s", err)
+	// }
+	// //解析用户名和OU分组
+	// uname := cert.Subject.CommonName
+	// outypes := cert.Subject.OrganizationalUnit
 	//解析成transaction
 	tx, err := protoutil.UnmarshalTransaction(payload.Data)
 	if err != nil {
@@ -91,8 +88,8 @@ func UnmarshalTransaction(payloadRaw []byte) (*TransactionInfo, error) {
 	result.Type = channelHeader.GetType()
 	result.TxID = channelHeader.GetTxId()
 	result.Mspid = identity.GetMspid()
-	result.Name = uname
-	result.OUTypes = outypes[0]
+	// result.Name = uname
+	// result.OUTypes = outypes[0]
 	result.CreateTime = time.Unix(channelHeader.Timestamp.Seconds, 0).Format("2006-01-02 15:04:05")
 	return result, nil
 }
